@@ -1,0 +1,21 @@
+Source: php-phpdocumentor-guides-graphs
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13), jq
+Standards-Version: 4.6.2
+Homepage: https://github.com/phpDocumentor/guides-graphs
+Vcs-Git: https://github.com/Vitexus/php-phpdocumentor-guides-graphs.git
+Rules-Requires-Root: no
+
+Package: php-phpdocumentor-guides-graphs
+Architecture: all
+Depends: ${misc:Depends}, php-cli | php, composer,
+ php-phpdocumentor-guides,
+ php-phpdocumentor-guides-restructured-text,
+ php-jawira-plantuml-encoding,
+ php-symfony-process,
+ php-twig
+Description: Graph rendering extension for phpDocumentor guides
+ Provides PlantUML-based diagram rendering support
+ for phpDocumentor guides.
